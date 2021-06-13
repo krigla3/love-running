@@ -14,7 +14,8 @@ body {
 
 /* headings and logo */
 
-h1, h2 {
+h1,
+h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -34,7 +35,8 @@ h1, h2 {
     letter-spacing: 4px;
 }
 
-#menu, #logo {
+#menu,
+#logo {
     line-height: 75px;
 }
 
@@ -65,10 +67,11 @@ h1, h2 {
     overflow: hidden;
 
     position: relative;
-    
+
 }
 
-#cover-text, #cover-text h2 {
+#cover-text,
+#cover-text h2 {
     color: #fff;
 }
 
@@ -79,20 +82,21 @@ h1, h2 {
 
 
 
-/* animates zoom effect on loading page */
+    /* animates zoom effect on loading page */
 
-animation-name: hero-zoom;
-animation-duration: 5s;
-animation-fill-mode: forwards;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
 /* creates the level of zoom for hero image */
 
 @keyframes hero-zoom {
-    from{
+    from {
         transform: scale(1);
     }
-    to{
+
+    to {
         transform: scale(1.1);
 
     }
@@ -115,10 +119,12 @@ animation-fill-mode: forwards;
     bottom: 30px;
     right: 150px;
     position: absolute;
-    
 
 
-} /* club ethos */
+
+}
+
+/* club ethos */
 
 #club-ethos {
     height: 600px;
@@ -128,7 +134,7 @@ animation-fill-mode: forwards;
     padding-top: 30px;
     width: 33%;
     float: left;
-   
+
 
 
 }
@@ -137,13 +143,13 @@ animation-fill-mode: forwards;
     padding-top: 30px;
     width: 33%;
     float: right;
-    
+
 }
 
 #center-about {
     width: 33%;
     margin: 0 auto;
-   
+
 
 }
 
@@ -159,7 +165,7 @@ hr {
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
-    
+
 
 
 }
@@ -177,7 +183,7 @@ hr {
 
 }
 
-.right-about-heading p  {
+.right-about-heading p {
     text-align: right;
 }
 
@@ -206,16 +212,16 @@ hr {
     border-radius: 50%;
     margin: 0 auto;
 
-    
+
 }
 
 /* event times */
 
 #times {
     background-image: url(../images/dublin-city.webp);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position: center;
     width: 100%;
     overflow: hidden;
 
@@ -247,7 +253,7 @@ footer {
     text-align: center;
 }
 
-.social-networks > li {
+.social-networks>li {
     display: inline;
 }
 
@@ -259,7 +265,7 @@ footer {
 }
 
 /* gallery */
-      
+
 #photos {
     clear: both;
     line-height: 0;
@@ -267,8 +273,47 @@ footer {
     column-gap: 0;
 }
 
-#photos > img {
+#photos>img {
 
     width: 100%;
+
+}
+
+/* Media queries */
+
+/*For larger to medium screens size from 1200 and down*/
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+
+    }
+
+
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #left-about,
+    #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+
+    }
+
+    hr {
+        display: none;
+    }
 
 }
